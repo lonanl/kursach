@@ -16,6 +16,7 @@ time, mark, audio, video {
     border: 0;
     vertical-align: baseline;
     box-sizing: border-box; /*padding не влияет на размер блока */
+
 }
 
 article, aside, details, figcaption, figure,

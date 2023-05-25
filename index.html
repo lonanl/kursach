@@ -2,16 +2,16 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <!--    <meta name="viewport"-->
-    <!--          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
-    <!--    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Зёрнышко</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="shortcut icon" href="img/favicon-z.svg" type="image/x-icon">
 </head>
 <body>
-<header class="header" id="header">
-    <div class="left-header">
+<header class="header shadow" id="header">
+    <div class="left-header shadow">
         <div class="logo"></div>
         <h2 id="left-header-h">Обжариваем свежий кофе каждый день</h2>
         <p>Вот уже более трёх лет мы занимаемся обжаркой кофе.</p>
@@ -57,11 +57,11 @@
 <nav class="nav" id="nav">
     <div class="left">
         <div class="logo"></div>
-        <div class="button" id="button-coffee">
-            <div class="button-brown">
+        <div class="button-external" id="button-coffee">
+            <div class="button">
                 <p>Кофе</p>
                 <img src="img/icons/beams16.svg" alt="Зёрна">
-                <div class="rect"></div>
+                <div class="button-underline red"></div>
             </div>
             <div class="menu-coffee">
                 <a href="#nav">Фильтр</a>
@@ -71,29 +71,29 @@
                 <a href="#">Капсулы</a>
             </div>
         </div>
-        <div class="button" id="nav-1">
-            <a href="#" class="button-brown">
+        <div class="button-external" id="nav-1">
+            <a href="#" class="button">
                 <p>Другое</p>
                 <img src="img/icons/cup16.svg" alt="Зёрна">
-                <div class="rect"></div>
+                <div class="button-underline red"></div>
             </a>
         </div>
-        <div class="button">
-            <a href="#" class="button-brown">
+        <div class="button-external">
+            <a href="#" class="button">
                 <p>О нас</p>
-                <div class="rect"></div>
+                <div class="button-underline red"></div>
             </a>
         </div>
-        <div class="button">
-            <a href="#" class="button-brown">
+        <div class="button-external">
+            <a href="#" class="button">
                 <p>Блог</p>
-                <div class="rect"></div>
+                <div class="button-underline red"></div>
             </a>
         </div>
-        <div class="button" id="nav-2">
-            <a href="#" class="button-brown">
+        <div class="button-external" id="nav-2">
+            <a href="#" class="button">
                 <p>Доставка и оплата</p>
-                <div class="rect"></div>
+                <div class="button-underline red"></div>
             </a>
         </div>
     </div>
@@ -110,6 +110,55 @@
     </div>
 </nav>
 <section class="section" id="section">
+    <div class="section-column-1">
+        <div class="for_espresso-column shadow">
+            <div class="section-header">
+                <h3>Для эспрессо</h3>
+                <div class="switcher">
+                    <button class="left"><img src="img/icons/switch_arrow_left22.svg" alt="влево"></button>
+                    <img src="img/icons/switch1_36x8.svg" alt="влево">
+                    <button class="left"><img src="img/icons/switch_arrow_right22.svg" alt="влево"></button>
+                </div>
+                <a href="#" class="button brown-text">
+                    <p>Посмотреть все</p>
+                    <img src="img/icons/expand16.svg" alt="Зёрна">
+                    <div class="button-underline beige"></div>
+                </a>
+            </div>
+            <div class="items">
+                <div class="item-card">
+                    <div class="item-card-top">
+                        <div class="card-background light shadow"></div>
+                        <h5 class="item-card-title">Пиратский бленд</h5>
+                        <img class="item-image shadow" src="img/item-image/001.jpg" alt="Пиратский бленд">
+                        <p class="brown-text">Легендарная и на 100% органическая смесь эспрессо для настоящих
+                            разбойников</p>
+                    </div>
+                    <div class="item-card-bottom">
+                        <div class="item-card-bottom-1">
+                            <button>
+                                <img src="img/icons/expand16.svg" alt="Зёрна">
+                            </button>
+                            <div>
+                                <a href="#" class="button ligth-text">
+                                    <p>Купить</p>
+                                    <img src="img/icons/cart-plus16.svg" alt="Купить">
+                                    <div class="button-underline brown"></div>
+                                    <div class="button-background red"></div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="for_filter-column shadow"></div>
+    </div>
+    <div class="section-column-2">
+        <div class="other-column shadow"></div>
+        <div class="news-column shadow"></div>
+    </div>
 </section>
 <footer class="footer" id="footer">
 

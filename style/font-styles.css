@@ -1,7 +1,5 @@
 body * {
     font-family: 'AvenirNextCyr-Medium', sans-serif;
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 17px;
 }
@@ -15,11 +13,41 @@ h2 {
     line-height: 48px;
 }
 
+h3 {
+    font-family: 'AvenirNextCyr-Demi', serif;
+    font-size: 26px;
+    line-height: 32px;
+}
+
 h5 {
     font-family: 'Bitter', serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
+}
+
+.beige {
+    background-color: #D99768;
+}
+
+.brown {
+    background-color: #583A2D;
+}
+
+.brown-text {
+    color: #583A2D;
+}
+
+.light {
+    background: #FCE6D2;
+}
+
+.ligth-text {
+    color: #FCE6D2;
+}
+
+.red {
+    background: #D95D39;
 }
 
