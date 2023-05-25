@@ -2,9 +2,9 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--    <meta name="viewport"-->
+    <!--          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+    <!--    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
     <title>Зёрнышко</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="shortcut icon" href="img/favicon-z.svg" type="image/x-icon">
@@ -47,7 +47,7 @@
             <h5>Эксперименты и инновации</h5>
             <p>Мы постоянно изучаем, экспериментируем <br>и стремимся изобрести инновационный продукт. Мы создали
                 растворимый
-                <br>specialty кофе. Ставим свои <br>эксперименты на кофейных плантациях.</p>
+                <br>specialty кофе. Ставим свои экспери-<br>менты на кофейных плантациях.</p>
             <h5>Азот в упаковке</h5>
             <p>Мы одни из немногих, кто использует азот при фасовке кофе, что позволяет хранить его в два раза дольше
                 без изменения вкуса.</p>
@@ -57,28 +57,45 @@
 <nav class="nav" id="nav">
     <div class="left">
         <div class="logo"></div>
-        <a href="#" class="button-brown">
-            <p>Кофе</p>
-            <img src="img/icons/beams16.svg" alt="Зёрна">
-            <div class="rect"></div>
-        </a>
-        <a href="#" class="button-brown" id="nav-1">
-            <p>Другое</p>
-            <img src="img/icons/cup16.svg" alt="Зёрна">
-            <div class="rect"></div>
-        </a>
-        <a href="#" class="button-brown">
-            <p>О нас</p>
-            <div class="rect"></div>
-        </a>
-        <a href="#" class="button-brown">
-            <p>Блог</p>
-            <div class="rect"></div>
-        </a>
-        <a href="#" class="button-brown" id="nav-2">
-            <p>Доставка и оплата</p>
-            <div class="rect"></div>
-        </a>
+        <div class="button" id="button-coffee">
+            <div class="button-brown">
+                <p>Кофе</p>
+                <img src="img/icons/beams16.svg" alt="Зёрна">
+                <div class="rect"></div>
+            </div>
+            <div class="menu-coffee">
+                <a href="#nav">Фильтр</a>
+                <a href="#" class="dark">Эспрессо</a>
+                <a href="#">Дрип пакеты</a>
+                <a href="#" class="dark">Растворимый кофе</a>
+                <a href="#">Капсулы</a>
+            </div>
+        </div>
+        <div class="button" id="nav-1">
+            <a href="#" class="button-brown">
+                <p>Другое</p>
+                <img src="img/icons/cup16.svg" alt="Зёрна">
+                <div class="rect"></div>
+            </a>
+        </div>
+        <div class="button">
+            <a href="#" class="button-brown">
+                <p>О нас</p>
+                <div class="rect"></div>
+            </a>
+        </div>
+        <div class="button">
+            <a href="#" class="button-brown">
+                <p>Блог</p>
+                <div class="rect"></div>
+            </a>
+        </div>
+        <div class="button" id="nav-2">
+            <a href="#" class="button-brown">
+                <p>Доставка и оплата</p>
+                <div class="rect"></div>
+            </a>
+        </div>
     </div>
     <div class="right">
         <button id="toggle-user"><img src="img/icons/arrow16.svg" alt="Раскрыть"></button>
@@ -90,12 +107,9 @@
             <button><img src="img/icons/search24.svg" alt="Корзина"></button>
             <div class="underline"></div>
         </div>
-
     </div>
-
 </nav>
 <section class="section" id="section">
-
 </section>
 <footer class="footer" id="footer">
 

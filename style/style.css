@@ -137,7 +137,7 @@ nav .logo {
     margin-right: 245px;
 }
 
-.left a {
+.left .button {
     margin-right: 20px;
 }
 
@@ -169,7 +169,7 @@ nav .logo {
     bottom: 0;
     background: #D95D39;
     z-index: 1;
-    transition: 0.2s ease-in-out 0s;
+    transition: 0.15s ease-in-out 0s;
 }
 
 .button-brown:hover .rect {
@@ -255,4 +255,49 @@ footer {
     background-color: #D95D39;
     box-shadow: 0 0 10px rgba(88, 58, 45, 0.4);
     margin-top: 10px;
+}
+
+.button {
+    position: relative;
+}
+
+.menu-coffee {
+    width: 150px;
+    background: white;
+    border: 2px solid #D99768;
+    position: absolute;
+    color: black;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: .3s ease-in-out;
+}
+
+.menu-coffee a {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.dark {
+    background: #FCE6D2;
+}
+
+#button-coffee:hover .menu-coffee {
+    transform: scaleY(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+[class|=menu] a {
+    transition: .2s ease-in-out;
+}
+
+[class|=menu] a:hover {
+    background-color: #F2994A;
 }
