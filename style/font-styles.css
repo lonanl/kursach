@@ -4,7 +4,6 @@ body * {
     line-height: 17px;
 }
 
-
 h2 {
     font-family: 'Bitter', serif;
     font-style: normal;
@@ -27,8 +26,18 @@ h5 {
     line-height: 19px;
 }
 
+.bold-b {
+    font-family: 'Bitter', serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
 .beige {
     background-color: #D99768;
+}
+
+.beige-text {
+    color: #D99768;
 }
 
 .brown {
@@ -51,3 +60,10 @@ h5 {
     background: #D95D39;
 }
 
+.firm {
+    background-color: #F2994A;
+}
+
+.firm-text {
+    color: #F2994A;
+}

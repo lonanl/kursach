@@ -141,7 +141,7 @@ nav .logo {
 }
 
 .button {
-    min-width: 97px;
+    min-width: 96px;
     height: 32px;
     padding: 0 7px 0 7px;
     display: flex;
@@ -308,19 +308,20 @@ footer {
 
 section {
     width: 1600px;
-    /*box-shadow: 0 0 10px rgba(88, 58, 45, 0.4);*/
     margin: 20px auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
-.for_espresso-column, .other-column {
+.section-column-2 {
+    flex: 1;
+}
+
+.for-espresso-column, .other-column {
     padding: 30px;
     margin-bottom: 20px;
 }
 
-.for_filter-column, .news-column {
+.for-filter-column, .news-column {
     padding: 30px;
     margin-top: 20px;
 }
@@ -350,8 +351,11 @@ section {
 
 .items {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    /*flex-direction: row;*/
+    /*align-items: flex-start;*/
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    max-width: 1030px;
 }
 
 .items .item-card:last-child {
@@ -359,6 +363,7 @@ section {
 }
 
 .item-card {
+    flex: 0 0 auto;
     border: 2px solid #D99768;
     padding: 18px 14px 14px 14px;
     margin-right: 20px;
@@ -404,9 +409,59 @@ section {
     flex-direction: column-reverse;
 }
 
-.item-card-bottom-1 {
+/*.item-card-bottom-1 {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*}*/
+
+.row-between {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+}
+
+.row-end {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.count-button {
+    min-width: 0;
+}
+
+.count-minus {
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/icons/arrow-left-brown16.svg);
+}
+
+.count-plus {
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/icons/arrow-right-brown16.svg);
+}
+
+.count {
+    margin: 0 2px;
+}
+
+.card-row-1 {
+    margin-top: 16px;
+}
+
+.big-price, .small-price, .small-price-title, .big-price-title {
+    width: 49px;
+}
+
+.big-price, .big-price-title {
+    text-align: right;
+}
+
+.card-row-2 {
+    margin-top: 8px;
 }
