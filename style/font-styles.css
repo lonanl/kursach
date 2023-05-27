@@ -32,38 +32,51 @@ h5 {
     font-weight: 700;
 }
 
+:root {
+    --beige: #D99768;
+    --brown: #583A2D;
+    --light: #FCE6D2;
+    --red: #D95D39;
+    --firm: #F2994A;
+}
+
 .beige {
-    background-color: #D99768;
+    background-color: var(--beige);
 }
 
 .beige-text {
-    color: #D99768;
+    color: var(--beige);
 }
 
 .brown {
-    background-color: #583A2D;
+    background-color: var(--brown);
+
 }
 
 .brown-text {
-    color: #583A2D;
+    color: var(--brown);
 }
 
 .light {
-    background: #FCE6D2;
+    background: var(--light);
 }
 
 .ligth-text {
-    color: #FCE6D2;
+    color: var(--light);
 }
 
 .red {
-    background: #D95D39;
+    background: var(--red);
+}
+
+.red-text {
+    color: var(--red);
 }
 
 .firm {
-    background-color: #F2994A;
+    background-color: var(--firm);
 }
 
 .firm-text {
-    color: #F2994A;
+    color: var(--firm);
 }

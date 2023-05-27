@@ -2,6 +2,10 @@
 @import "reset.css";
 @import "font-styles.css";
 
+::-webkit-scrollbar {
+    width: 0;
+}
+
 .shadow {
     box-shadow: 0 0 10px rgba(88, 58, 45, 0.4);
 }
@@ -324,6 +328,7 @@ section {
 .for-filter-column, .news-column {
     padding: 30px;
     margin-top: 20px;
+    height: 500px;
 }
 
 .section-column-1 {
@@ -464,4 +469,35 @@ section {
 
 .card-row-2 {
     margin-top: 8px;
+}
+
+.card-row-3 {
+    margin-top: 23px;
+}
+
+.bar-external {
+    position: relative;
+    width: 85px;
+}
+
+.bar-background {
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+}
+
+.bar-fullness {
+    height: 3px;
+    margin-top: 2px;
+}
+
+.card-row-4 {
+    margin-top: 15px;
+}
+
+.card-row-5 {
+    text-align: center;
 }
