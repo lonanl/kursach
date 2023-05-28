@@ -1,0 +1,90 @@
+<html lang="ru">
+
+<head>
+    <title>Sling Academy</title>
+    <!-- CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 40px;
+        }
+
+        button {
+            padding: 10px;
+            margin: 10px 20px 10px 0;
+            border: 1px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: orange;
+        }
+
+        #myDiv {
+            width: 400px;
+            height: 200px;
+            overflow-y: scroll;
+            border: 1px solid black;
+            background: rgb(244, 233, 214);
+        }
+    </style>
+
+    <!-- JavaScript -->
+    <script>
+        // define a function to scroll to the bottom of the div
+        const scrollToBottom = () => {
+            // get the div element by its id
+            const div = document.getElementById("myDiv");
+            // smooth scroll to the bottom of the div
+            div.scrollTo({
+                top: div.scrollHeight,
+                behavior: 'smooth'
+            });
+
+        }
+
+        // define a function to scroll to the top of the div
+        const scrollToTop = () => {
+            // get the div element by its id
+            const div = document.getElementById("myDiv");
+            // smooth scroll to the top of the div
+            div.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</head>
+
+<body>
+<!-- create a button element that calls scrollToBottom function -->
+<button onclick="scrollToBottom()">Scroll to bottom</button>
+
+<!-- create another button element that calls scrollToTop function -->
+<button onclick="scrollToTop()">Scroll to top</button>
+
+<!-- create a div element -->
+<div id="myDiv">
+    <!-- Just add some dummy contents to make the div higher -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis nisl vitae nisi tincidunt lacinia. Fusce
+        nec leo eget augue aliquet ullamcorper. Morbi quis semper arcu.</p>
+    <p>Phasellus sed lacus et lorem consequat malesuada ut ac mi. Sed euismod lectus non eros sollicitudin, at
+        ultricies sapien ornare.</p>
+    <p>Vivamus ut leo vitae justo sagittis tristique sit amet non odio. Pellentesque habitant morbi tristique
+        senectus et netus et malesuada fames ac turpis egestas.</p>
+    <p>Nullam vel nunc eget massa blandit constius sed at nibh. Curabitur vitae felis quis ante rutrum fringilla.</p>
+    <p>Etiam euismod tellus nec velit feugiat, vel tincidunt diam ullamcorper. Donec sit amet neque quis magna
+        eleifend faucibus.</p>
+    <p>Mauris id nisi vitae nulla bibendum mattis ut sit amet erat. Cras euismod velit ut lorem gravida, at
+        vulputate quam aliquet.</p>
+    <p>Nunc quis augue sed justo iaculis consequat ac vel risus. Suspendisse potenti.</p>
+</div>
+
+</body>
+
+</html>

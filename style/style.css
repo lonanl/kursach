@@ -356,11 +356,12 @@ section {
 
 .items {
     display: flex;
-    /*flex-direction: row;*/
-    /*align-items: flex-start;*/
+    position: relative;
     flex-wrap: nowrap;
     overflow-x: auto;
     max-width: 1030px;
+    /*flex-direction: row;*/
+    /*align-items: flex-start;*/
 }
 
 .items .item-card:last-child {

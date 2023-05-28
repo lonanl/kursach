@@ -115,9 +115,11 @@
             <div class="section-header">
                 <h3>Для эспрессо</h3>
                 <div class="switcher">
-                    <button class="left"><img src="img/icons/switch_arrow_left22.svg" alt="влево"></button>
-                    <img src="img/icons/switch1_36x8.svg" alt="влево">
-                    <button class="left"><img src="img/icons/switch_arrow_right22.svg" alt="влево"></button>
+                    <button class="left" onclick="scrollCatalogItems('.items', false)"><img
+                            src="img/icons/switch_arrow_left22.svg" alt="влево"></button>
+                    <img class="switcher-img" src="img/icons/switch2_1_22x8.svg" alt="влево">
+                    <button class="right" onclick="scrollCatalogItems('.items', true)"><img
+                            src="img/icons/switch_arrow_right22.svg" alt="вправо"></button>
                 </div>
                 <a href="#" class="button brown-text">
                     <p>Посмотреть все</p>
@@ -125,7 +127,7 @@
                     <div class="button-underline beige"></div>
                 </a>
             </div>
-            <div class="items">
+            <div class="items" scroll="0">
                 <div class="item-card" style="display: none;">
                     <div class="item-card-top">
                         <div class="card-background light shadow"></div>
@@ -204,6 +206,7 @@
     </div>
     <script src="js/catalog.js"></script>
     <script src="js/catalog_espresso_main.js"></script>
+    <script src="js/scroll.js"></script>
 </section>
 <footer class="footer" id="footer">
 
