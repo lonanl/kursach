@@ -261,6 +261,10 @@ footer {
     background-color: #D95D39;
     box-shadow: 0 0 10px rgba(88, 58, 45, 0.4);
     margin: 10px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .button-external {
@@ -501,4 +505,9 @@ section {
 
 .card-row-5 {
     text-align: center;
+}
+
+.footer-text {
+    color: var(--light);
+    margin: 10px;
 }
