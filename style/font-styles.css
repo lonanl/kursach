@@ -13,7 +13,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'AvenirNextCyr-Demi', serif;
+    font-family: 'AvenirNextCyr-Medium', serif;
     font-size: 26px;
     line-height: 32px;
 }
@@ -38,6 +38,10 @@ h5 {
     --light: #FCE6D2;
     --red: #D95D39;
     --firm: #F2994A;
+}
+
+.white {
+    background-color: white;
 }
 
 .beige {

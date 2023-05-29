@@ -115,10 +115,10 @@
             <div class="section-header">
                 <h3>Для эспрессо</h3>
                 <div class="switcher">
-                    <button class="left" onclick="scrollCatalogItems('.items', false)"><img
+                    <button class="left" onclick="scrollCatalogItems('.for-espresso-column .items', false)"><img
                             src="img/icons/switch_arrow_left22.svg" alt="влево"></button>
                     <img class="switcher-img" src="img/icons/switch2_1_22x8.svg" alt="влево">
-                    <button class="right" onclick="scrollCatalogItems('.items', true)"><img
+                    <button class="right" onclick="scrollCatalogItems('.for-espresso-column .items', true)"><img
                             src="img/icons/switch_arrow_right22.svg" alt="вправо"></button>
                 </div>
                 <a class="button brown-text">
@@ -146,10 +146,10 @@
                                 <div class="button brown-text count-button">
                                     <div class="button-underline brown"></div>
                                     <div class="button-background light"></div>
-                                    <button class="count-minus">
+                                    <button class="count-minus" onclick="changeCount(this, false)">
                                     </button>
                                     <p class="count">1</p>
-                                    <button class="count-plus"></button>
+                                    <button class="count-plus" onclick="changeCount(this, true)"></button>
                                 </div>
                                 <a class="button ligth-text">
                                     <p>Купить</p>
@@ -192,21 +192,86 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="item-card"></div>
-                <div class="item-card"></div>
-                <div class="item-card"></div> -->
             </div>
         </div>
-        <div class="for-filter-column shadow"></div>
+        <div class="for-filter-column shadow">
+            <div class="section-header">
+                <h3>Для фильтра</h3>
+                <div class="switcher">
+                    <button class="left" onclick="scrollCatalogItems('.for-filter-column .items', false)"><img
+                            src="img/icons/switch_arrow_left22.svg" alt="влево"></button>
+                    <img class="switcher-img" src="img/icons/switch2_1_22x8.svg" alt="влево">
+                    <button class="right" onclick="scrollCatalogItems('.for-filter-column .items', true)"><img
+                            src="img/icons/switch_arrow_right22.svg" alt="вправо"></button>
+                </div>
+                <a class="button brown-text">
+                    <p>Посмотреть все</p>
+                    <img src="img/icons/expand16.svg" alt="Зёрна">
+                    <div class="button-underline beige"></div>
+                </a>
+            </div>
+            <div class="items" scroll="0">
+                <!--                заполняется скриптом-->
+            </div>
+        </div>
     </div>
     <div class="section-column-2">
-        <div class="other-column shadow row-between">
+        <div class="other-column shadow">
+            <h3>Другие категории</h3>
+            <!--            <a>Инструменты</a>-->
+            <!--            <div class="divider-hor beige"></div>-->
+            <!--            <a>Посуда</a>-->
+            <!--            <div class="divider-hor beige"></div>-->
+            <!--            <a>Дрип-пакеты</a>-->
+            <!--            <div class="divider-hor beige"></div>-->
+            <!--            <a>Аксессуары</a>-->
+            <!--            <div class="divider-hor beige"></div>-->
+            <!--            <a>Расходные материалы</a>-->
+            <!--            <div class="divider-hor beige"></div>-->
+            <!--            <a>Мерчендайзинг</a>-->
+            <!--            <div class="divider-hor beige"></div>-->
+            <!--            <a>Растворимый кофе</a>-->
+            <!--            <div class="divider-hor beige"></div>-->
+            <!--            <a>Капсулы</a>-->
+            <div class="other-item">
+                <div class="other-content">
+                    <a href=""><h5>Инструменты</h5></a>
+                    <img class="item-image shadow" src="img/item-image/Инструменты.jpg" alt="Инструменты">
+                </div>
+                <div class="other-card-bg shadow"></div>
+            </div>
+            <div class="other-item">
+                <div class="other-content">
+                    <a href=""><h5>Посуда</h5></a>
+                    <img class="item-image shadow" src="img/item-image/Посуда.jpg" alt="Инструменты">
+                </div>
+                <div class="other-card-bg shadow"></div>
+            </div>
+            <div class="other-item">
+                <div class="other-content">
+                    <a href=""><h5>Дрип-пакеты</h5></a>
+                    <img class="item-image shadow" src="img/item-image/Дрип-пакеты.jpg" alt="Инструменты">
+                </div>
+                <div class="other-card-bg shadow"></div>
+            </div>
+            <div class="other-item">
+                <div class="other-content">
+                    <a href=""><h5>Аксессуары</h5></a>
+                    <img class="item-image shadow" src="img/item-image/Аксесусары.jpg" alt="Инструменты">
+                </div>
+                <div class="other-card-bg shadow"></div>
+            </div>
+            <div class="other-item-lined"><a href=""><h5>Расходные материалы</h5></a></div>
+            <div class="other-item-lined"><a href=""><h5>Мерчендайзинг</h5></a></div>
+            <div class="other-item-lined"><a href=""><h5>Растворимый кофе</h5></a></div>
+            <div class="other-item-lined"><a href="#"><h5>Капсулы</h5></a></div>
         </div>
         <div class="news-column shadow"></div>
     </div>
     <script src="js/catalog.js"></script>
     <script src="js/catalog_espresso_main.js"></script>
     <script src="js/scroll.js"></script>
+    <script src="js/card_item.js"></script>
 </section>
 <footer class="footer" id="footer">
     <p class="footer-text"><a

@@ -1,4 +1,4 @@
-const catalog = [
+const catalogEspresso = [
     {
         id: 0,
         title: 'Пиратский бленд',
@@ -70,5 +70,80 @@ const catalog = [
         plotnost: 70,
         price_low: 710,
         price_big: 2200,
+    }
+]
+
+const catalogFilter = [
+    {
+        id: 6,
+        title: 'Кения Рунгето PB',
+        image: 'img/item-image/006.jpg',
+        region: 'Кения',
+        description: 'Сладкая и яркая Кения. Во вкусе: малина, вишня, лист черной смородины и леденцовая карамель!',
+        kislotnost: 70,
+        gorech: 80,
+        plotnost: 15,
+        price_low: 885,
+        price_big: 3345,
+    },
+    {
+        id: 7,
+        title: 'Перу Томас Круз Гейша',
+        image: 'img/item-image/007.jpg',
+        region: 'Перу',
+        description: 'Деликатный и хорошо читаемый кофе со вкусом лесных ягод, чая с цитрусами и цветочными нотами!',
+        kislotnost: 25,
+        gorech: 15,
+        plotnost: 15,
+        price_low: 2410,
+        price_big: 9440,
+    },
+    {
+        id: 8,
+        title: 'Боливия Копакабана',
+        image: 'img/item-image/008.jpg',
+        region: 'Боливия',
+        description: 'Сладкий сбалансированный кофе с нотами запеченного яблока, фейхоа и ореховыми нотами.',
+        kislotnost: 55,
+        gorech: 20,
+        plotnost: 50,
+        price_low: 935,
+        price_big: 3355,
+    },
+    {
+        id: 9,
+        title: 'Колумбия Рафаэль Айя',
+        image: 'img/item-image/009.jpg',
+        region: 'Колумбия',
+        description: 'Яркий и искристый кофе со вкусом темных фруктов, ягод и портвейна!',
+        kislotnost: 45,
+        gorech: 45,
+        plotnost: 75,
+        price_low: 1020,
+        price_big: 3890,
+    },
+    {
+        id: 10,
+        title: 'Кения Мара',
+        image: 'img/item-image/010.jpg',
+        region: 'Кения',
+        description: 'Яркий, сладкий кофе, с читаемым букетом темных ягод, сливы и вишни в шоколаде!',
+        kislotnost: 15,
+        gorech: 80,
+        plotnost: 25,
+        price_low: 955,
+        price_big: 3625,
+    },
+    {
+        id: 11,
+        title: 'Эфиопия Лалиса',
+        image: 'img/item-image/011.jpg',
+        region: 'Эфиопия',
+        description: 'Чистый, сочный кофе с умеренной кислотностью. Во вкусе цитрусовые и цветочные ноты :)',
+        kislotnost: 75,
+        gorech: 5,
+        plotnost: 40,
+        price_low: 900,
+        price_big: 3400,
     }
 ]
