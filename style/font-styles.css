@@ -4,6 +4,12 @@ body * {
     line-height: 17px;
 }
 
+.small-text {
+    font-family: 'AvenirNextCyr-Regular', sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+}
+
 h2 {
     font-family: 'Bitter', serif;
     font-style: normal;
@@ -30,6 +36,9 @@ h5 {
     font-family: 'Bitter', serif;
     font-style: normal;
     font-weight: 700;
+    border-bottom: 3px solid var(--red);
+    margin-bottom: -3px;
+    /*transition: 0.1s;*/
 }
 
 :root {

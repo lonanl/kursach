@@ -8,3 +8,15 @@ function changeCount(cardObject, isplus) {
     }
     console.log(count)
 }
+
+function changeSelectedPrice(priceElem) {
+    console.log(priceElem.classList)
+    if (!priceElem.classList.contains('bold-b') && priceElem.textContent !== '---') {
+        priceElem.classList.toggle("bold-b")
+        if (priceElem.classList.contains('small-price')) {
+            priceElem.parentElement.querySelector('.big-price').classList.toggle("bold-b")
+        } else {
+            priceElem.parentElement.querySelector('.small-price').classList.toggle("bold-b")
+        }
+    }
+}

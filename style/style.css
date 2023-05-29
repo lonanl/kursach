@@ -219,7 +219,6 @@ nav .logo {
     width: 2px;
     height: 40px;
     margin-left: 20px;
-    background-color: #D95D39;
 }
 
 .search-area {
@@ -252,19 +251,6 @@ nav .logo {
 .search-area:hover .underline {
     width: 200px;
     background-color: rgba(252, 230, 210, 255);
-}
-
-
-footer {
-    width: 1600px;
-    height: 286px;
-    background-color: #D95D39;
-    box-shadow: 0 0 10px rgba(88, 58, 45, 0.4);
-    margin: 10px auto 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .button-external {
@@ -464,6 +450,7 @@ section {
     width: 49px;
 }
 
+
 .big-price, .big-price-title {
     text-align: right;
 }
@@ -503,11 +490,6 @@ section {
     text-align: center;
 }
 
-.footer-text {
-    color: var(--light);
-    margin: 10px;
-}
-
 .other-column {
     display: flex;
     flex-wrap: wrap;
@@ -522,10 +504,7 @@ section {
 
 .other-item {
     width: 205px;
-    padding-top: 18px;
-    padding-right: 13px;
-    padding-bottom: 18px;
-    padding-left: 13px;
+    padding: 18px 13px;
     border: 2px solid var(--beige);
     background-color: var(--light);
     position: relative;
@@ -537,7 +516,7 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    height: 65%;
+    height: 60%;
     background-color: white;
     z-index: 0;
 }
@@ -547,11 +526,6 @@ section {
     z-index: 1;
 }
 
-.divider-hor {
-    height: 2px;
-    width: 100%;
-    margin: 20px 0;
-}
 
 .other-column h3 {
     margin-bottom: 10px;
@@ -561,7 +535,7 @@ section {
     margin-bottom: 10px;
 }
 
-.other-column img {
+.other-content img {
     margin-bottom: 0;
 }
 
@@ -569,4 +543,124 @@ section {
     padding: 18px 0 18px 13px;
     border: 2px solid var(--beige);
     width: 205px;
+}
+
+.news-column {
+    column-gap: 20px;
+}
+
+.news-column .other-item {
+    width: 220px;
+}
+
+.other-item p {
+    margin-bottom: 15px;
+}
+
+.news-list {
+    align-self: flex-start;
+}
+
+.divider-hor {
+    height: 2px;
+    width: 100%;
+    margin: 10px 0 20px 0;
+}
+
+footer {
+    width: 1600px;
+    height: 286px;
+    box-shadow: 0 0 10px rgba(88, 58, 45, 0.4);
+    margin: 10px auto 0 auto;
+    padding: 30px;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-between;*/
+    color: var(--light);
+    position: relative;
+    column-gap: 20px;
+}
+
+.column-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+footer .logo {
+    width: 150px;
+    height: 34px;
+    background-image: url(../img/logo-small.svg);
+    margin-bottom: 40px;
+}
+
+footer input[type=text] {
+    width: 230px;
+    /*height: 36px;*/
+    padding: 10px;
+    border: 1px solid var(--brown);
+    margin-right: 20px;
+}
+
+footer .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+}
+
+.row {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.send {
+    margin-right: 20px;
+}
+
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.custom-checkbox + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.custom-checkbox + label::before {
+    content: '';
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+    margin-right: 3px;
+    flex-grow: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../img/icons/checkbox_light17.svg);
+}
+
+.custom-checkbox:checked + label::before {
+    background-image: url(../img/icons/checkbox_checked_light17.svg);
+}
+
+footer .divider-vertical {
+    height: 100%;
+    margin: 0;
+}
+
+.footer-text {
+    margin-bottom: 20px;
 }
