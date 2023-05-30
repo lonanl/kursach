@@ -1,8 +1,8 @@
 function fill(parent, sample, catalog) {
     let index = 0 //индекс (чисто для нумерации на странице)
     catalog.forEach((element) => { //для всех элементов массива каталога
-        let newItem = itemSample.cloneNode(true)  //создаем новый виртуальный элемент из сэмпла глубоким копированием
-        itemSample.parentElement = parent
+        let newItem = sample.cloneNode(true)  //создаем новый виртуальный элемент из сэмпла глубоким копированием
+        sample.parentElement = parent
         newItem.id = `card${index}` //ставим индекс в айди
         index++
         newItem.setAttribute('articul-id', element.id) //артикул
@@ -22,10 +22,21 @@ function fill(parent, sample, catalog) {
 }
 
 const itemsEspresso = document.querySelector('.for-espresso-column .items') //родительский узел
-let itemSample = itemsEspresso.querySelector('.item-card').cloneNode(true) //создаем виртуальный сэмпл карточки
-itemsEspresso.querySelector('.item-card').remove() //удаляем оригинальную карточку
+if (itemsEspresso !== null) {
+    let itemSample = itemsEspresso.querySelector('.item-card').cloneNode(true) //создаем виртуальный сэмпл карточки
 
-const itemsFilter = document.querySelector('.for-filter-column .items')
 
-fill(itemsEspresso, itemSample, catalogEspresso)
-fill(itemsFilter, itemSample, catalogFilter)
+    let itemsFilter = document.querySelector('.for-filter-column .items')
+    itemsEspresso.querySelector('.item-card').remove() //удаляем оригинальную карточку
+    fill(itemsEspresso, itemSample, catalogEspresso)
+    fill(itemsFilter, itemSample, catalogFilter)
+}
+
+let parentForEspresso = document.querySelector('.section-e-1')
+if (parentForEspresso !== null) {
+    let forEspressoSample = parentForEspresso.querySelector('.item-card').cloneNode(true)
+    parentForEspresso.querySelector('.item-card').remove()
+    fill(parentForEspresso, forEspressoSample, catalogEspresso.slice(0, 3))
+    parentForEspresso = document.querySelector('.section-e-2')
+    fill(parentForEspresso, forEspressoSample, catalogEspresso.slice(3))
+}

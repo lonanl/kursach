@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Для эспрессо - Зёрнышко</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/cart.css">
+    <link rel="stylesheet" href="style/espresso.css">
+    <link rel="shortcut icon" href="img/favicon-z.svg" type="image/x-icon">
+</head>
+<body>
+<header class="header-cart">
+    <div class="divider-hor white"></div>
+    <div class="header-cart-content">
+        <h2>Для эспрессо</h2>
+        <p class="breadcrumb brown-text"><a href="index.html">Главная</a> → Каталог → Для эспрессо</p>
+    </div>
+    <div class="divider-hor beige"></div>
+</header>
+<script src="load-nav-menu.js"></script>
+<section class="espresso">
+    <div class="section-e-1">
+        <div class="item-card shadow" style="display: none">
+            <div class="item-card-top">
+                <div class="card-background light shadow"></div>
+                <h5 class="item-card-title">Пиратский бленд</h5>
+                <div class="card-row-5 firm-text region">
+                    Эфиопия, Колумбия
+                </div>
+                <img class="item-image shadow" src="img/item-image/001.jpg" alt="Пиратский бленд">
+                <p class="description brown-text">Легендарная и на 100% органическая смесь эспрессо для
+                    настоящих
+                    разбойников</p>
+            </div>
+            <div class="item-card-bottom">
+                <div class="row-between card-row-1">
+                    <div class="row row-1-1">
+                        <button>
+                            <img src="img/icons/expand16.svg" alt="Зёрна">
+                        </button>
+                        <button class="start">
+                            <img src="img/icons/star16.svg" alt="Зёрна">
+                        </button>
+                    </div>
+                    <div class="row-between">
+                        <div class="button brown-text count-button">
+                            <div class="button-underline beige"></div>
+                            <div class="button-background light"></div>
+                            <button class="count-minus" onclick="changeCount(this, false)">
+                            </button>
+                            <p class="count">1</p>
+                            <button class="count-plus" onclick="changeCount(this, true)"></button>
+                        </div>
+                        <a class="button ligth-text">
+                            <p>Купить</p>
+                            <img src="img/icons/cart-plus16.svg" alt="Купить">
+                            <div class="button-underline brown"></div>
+                            <div class="button-background red"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row-end card-row-2">
+                    <h5 class="small-price bold-b" onclick="changeSelectedPrice(this, 'big-price')">685</h5>
+                    <h5 class="big-price" onclick="changeSelectedPrice(this, 'small-price')">2450</h5>
+                </div>
+                <div class="row-between card-row-3 firm-text">
+                    <p>Цена</p>
+                    <div class="row-end">
+                        <p class="small-price-title">250 гр</p>
+                        <p class="big-price-title">1 кг</p>
+                    </div>
+                </div>
+                <div class="row-between card-row-4 brown-text">
+                    <div class="bar-external">
+                        <p>Кислотность</p>
+                        <div class="bar-background white"></div>
+                        <div class="bar-fullness red kislotnost" style="width: 70%"></div>
+                    </div>
+                    <div class="bar-external">
+                        <p>Горечь</p>
+                        <div class="bar-background white"></div>
+                        <div class="bar-fullness red gorech" style="width: 40%"></div>
+                    </div>
+                    <div class="bar-external">
+                        <p>Плотность</p>
+                        <div class="bar-background white"></div>
+                        <div class="bar-fullness red plotnost" style="width: 15%"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sort-and-filter">
+        <table class="iksweb">
+            <tbody>
+            <tr>
+                <td colspan="3"><h4>Сортировка</h4></td>
+            </tr>
+            <tr>
+                <td>По цене</td>
+                <td>По новизне</td>
+                <td>По популярности</td>
+            </tr>
+            <tr>
+                <td>
+                    <button style="display: inline"><img src="img/icons/decrease16beige.svg" alt="По уменьшению">
+                    </button>
+                    <button style="display: inline"><img src="img/icons/increase16beige.svg" alt="По уменьшению">
+                    </button>
+                </td>
+                <td>
+                    <button style="display: inline"><img src="img/icons/decrease16beige.svg" alt="По уменьшению">
+                    </button>
+                    <button style="display: inline"><img src="img/icons/increase16beige.svg" alt="По уменьшению">
+                    </button>
+                </td>
+                <td>
+                    <button style="display: inline"><img src="img/icons/decrease16beige.svg" alt="По уменьшению">
+                    </button>
+                    <button style="display: inline"><img src="img/icons/increase16beige.svg" alt="По уменьшению">
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3"><h4><br>Фильтры</h4></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="bold-b">Страны</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="custom-checkbox brown-checkbox" id="america" name="america"
+                           value="no">
+                    <label for="america">Америка</label></td>
+                <td><input type="checkbox" class="custom-checkbox brown-checkbox" id="africa" name="africa" value="no">
+                    <label for="africa">Африка</label></td>
+                <td><input type="checkbox" class="custom-checkbox brown-checkbox" id="asia" name="asia" value="no">
+                    <label for="asia">Азия</label></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="bold-b">Насыщенность</td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="custom-radio" name="saturation" type="radio" id="slab" value="green">
+                    <label for="slab">Слабый</label>
+                </td>
+                <td>
+                    <input class="custom-radio" name="saturation" type="radio" id="sred" value="green">
+                    <label for="sred">Средний</label>
+                </td>
+                <td>
+                    <input class="custom-radio" name="saturation" type="radio" id="plotn" value="green" checked>
+                    <label for="plotn">Плотный</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="bold-b">Вкус</td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="custom-radio" name="tasti" type="radio" id="kisl" value="green">
+                    <label for="kisl">Кислый</label>
+                </td>
+                <td>
+                    <input class="custom-radio" name="tasti" type="radio" id="gork" value="green">
+                    <label for="gork">Горький</label>
+                </td>
+                <td>
+                    <input class="custom-radio" name="tasti" type="radio" id="arom" value="green">
+                    <label for="arom">Ароматный</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <div class="section-e-2"></div>
+
+</section>
+<script src="load-footer.js"></script>
+
+<script src="js/catalog.js"></script>
+<script src="js/card_item.js"></script>
+<script src="js/for_espresso.js"></script>
+<script src="js/catalog_espresso_main.js"></script>
+<!--<script src="js/cart.js"></script>-->
+
+</body>
