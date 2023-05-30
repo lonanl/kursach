@@ -183,6 +183,7 @@ article {
     position: relative;
     z-index: 1;
     background-color: white;
+    height: fit-content;
 }
 
 .a2 {
@@ -202,4 +203,23 @@ article {
     flex: 1;
     gap: 20px;
     padding: 30px;
+}
+
+.delivery-method {
+    padding: 30px;
+    background-color: var(--light);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.delivery-descr {
+    width: 480px;
+}
+
+.delivery-price {
+    width: 80px;
+    height: fit-content;
 }
