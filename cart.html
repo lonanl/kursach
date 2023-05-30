@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Зёрнышко</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/cart.css">
+    <link rel="shortcut icon" href="img/favicon-z.svg" type="image/x-icon">
+</head>
+<body>
+<header class="header-cart">
+    <div class="divider-hor white"></div>
+    <div class="header-cart-content">
+        <h2>Корзина</h2>
+        <p class="breadcrumb brown-text"><a href="index.html">Главная</a> → Корзина</p>
+    </div>
+    <div class="divider-hor beige"></div>
+</header>
+<section>
+    <div class="cart-list shadow">
+        <h3>Добавлено</h3>
+        <div class="cart-element shadow">
+            <div class="background light"></div>
+            <h5 class="ce-title">Пиратский бленд</h5>
+            <div class="ce-right">
+                <button onclick="ceDelete(this)"><img src="img/icons/delete16.svg" alt="Удалить"></button>
+                <div class="button brown-text count-button">
+                    <div class="button-underline beige"></div>
+                    <div class="button-background white"></div>
+                    <button class="count-minus" onclick="changeCount(this, false)">
+                    </button>
+                    <p class="count">1</p>
+                    <button class="count-plus" onclick="changeCount(this, true)"></button>
+                </div>
+                <div class="row-end firm-text">
+                    <p class="small-price-title bold-b" onclick="changeSelectedPrice(this, 'big-price-title')">250
+                        гр</p>
+                    <p class="big-price-title" onclick="changeSelectedPrice(this, 'small-price-title')">1 кг</p>
+                </div>
+                <h5 class="ce-price">685 ₽</h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="js/catalog.js"></script>
+<script src="js/card_item.js"></script>
+<script src="js/cart.js"></script>
+
+</body>

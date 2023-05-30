@@ -1,4 +1,4 @@
-const catalogEspresso = [
+let catalogEspresso = [
     {
         id: 0,
         title: 'Пиратский бленд',
@@ -73,7 +73,7 @@ const catalogEspresso = [
     }
 ]
 
-const catalogFilter = [
+let catalogFilter = [
     {
         id: 6,
         title: 'Кения Рунгето PB',
@@ -146,4 +146,32 @@ const catalogFilter = [
         price_low: 900,
         price_big: 3400,
     }
+]
+
+let cartSpisok = [
+    {
+        id: 0,
+        count: 2,
+        isBig: false,
+    },
+    {
+        id: 1,
+        count: 1,
+        isBig: true,
+    },
+    {
+        id: 3,
+        count: 1,
+        isBig: false,
+    },
+    {
+        id: 4,
+        count: 1,
+        isBig: false,
+    },
+    {
+        id: 5,
+        count: 3,
+        isBig: true,
+    },
 ]

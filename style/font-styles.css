@@ -33,12 +33,19 @@ h5 {
 }
 
 .bold-b {
+    font-family: 'AvenirNextCyr-Demi', sans-serif;
+}
+
+h5.bold-b {
     font-family: 'Bitter', serif;
     font-style: normal;
     font-weight: 700;
+    /*transition: 0.1s;*/
+}
+
+.section-column-1 .bold-b, .ce-right .bold-b {
     border-bottom: 3px solid var(--red);
     margin-bottom: -3px;
-    /*transition: 0.1s;*/
 }
 
 :root {

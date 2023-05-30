@@ -10,10 +10,10 @@
     box-shadow: 0 0 10px rgba(88, 58, 45, 0.4);
 }
 
-header {
+.header-main {
     width: 1600px;
     height: 440px;
-    background: #FCE6D2;
+    background: var(--light);
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -26,7 +26,7 @@ header {
 .left-header {
     width: 515px;
     height: 100%;
-    background: #F2994A;
+    background: var(--firm);
     padding: 30px;
     color: white;
     flex: none;
@@ -34,7 +34,7 @@ header {
     flex-grow: 0;
 }
 
-header .logo {
+.header-main .logo {
     width: 310px;
     height: 88px;
     margin-top: -10px;
@@ -304,6 +304,7 @@ section {
     width: 1600px;
     margin: 20px auto;
     display: flex;
+    column-gap: 20px;
 }
 
 .section-column-2 {
@@ -318,14 +319,6 @@ section {
 .for-filter-column, .news-column {
     padding: 30px;
     margin-top: 20px;
-}
-
-.section-column-1 {
-    margin-right: 10px;
-}
-
-.section-column-2 {
-    margin-left: 10px;
 }
 
 .section-header {
@@ -607,7 +600,7 @@ footer input[type=text] {
     margin-right: 20px;
 }
 
-footer .background {
+.background {
     position: absolute;
     top: 0;
     left: 0;
