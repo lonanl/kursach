@@ -9,9 +9,6 @@
     margin-right: auto;
 }
 
-.header-cart .divider-hor {
-    margin: 0;
-}
 
 .header-cart-content {
     padding: 0 30px;
@@ -80,4 +77,16 @@
 .deleted *:not(.background) {
     opacity: 0;
     transition: .3s ease-in-out;
+}
+
+.order, .recent-order {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 30px;
+    height: fit-content;
+}
+
+.footer {
+    margin-top: 40px;
 }

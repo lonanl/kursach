@@ -557,6 +557,9 @@ section {
 .divider-hor {
     height: 2px;
     width: 100%;
+}
+
+.news-column .divider-hor {
     margin: 10px 0 20px 0;
 }
 

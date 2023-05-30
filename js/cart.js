@@ -1,5 +1,6 @@
 function ceDelete(cartElement) {
     console.log(cartElement.parentElement.parentElement.classList.toggle('deleted'))
+    updateOrder()
 }
 
 let cartList = document.querySelector('.cart-list')
@@ -32,6 +33,7 @@ function updatePriceByCount(ce, count) {
     let newPrice = Number(ce.querySelector('.ce-price').textContent.slice(0, -2)) / oldCount * count
     ce.setAttribute('count', count)
     ce.querySelector('.ce-price').textContent = `${newPrice} ₽`
+    updateOrder()
 }
 
 function updatePriceBySize(ceEl, targetClass) {
@@ -44,4 +46,23 @@ function updatePriceBySize(ceEl, targetClass) {
     let count = ce.getAttribute('count')
     ce.querySelector('.ce-price').textContent = `${pricePer * count} ₽`
     console.log(pricePer)
+    updateOrder()
 }
+
+function updateOrder() {
+    let ces = document.querySelectorAll('.cart-element:not(.deleted)')
+    console.log(ces)
+    let summ = 0
+    ces.forEach((ce) => {
+        let price = Number(ce.querySelector('.ce-price').textContent.slice(0, -2))
+        summ += price
+        console.log(price, summ)
+    })
+    document.querySelector('.summ').textContent = `${summ} ₽`
+    document.querySelector('.sale').textContent = `${Math.floor(summ * 0.1)} ₽`
+    document.querySelector('.total').textContent = `${summ - Math.floor(summ * 0.1)} ₽`
+
+}
+
+updateOrder()
+// setTimeout(updateOrder, 1000);
