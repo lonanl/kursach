@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Колумбия Рафаэль Айя</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/cart.css">
+    <link rel="shortcut icon" href="img/favicon-z.svg" type="image/x-icon">
+</head>
+<body>
+<header class="header-cart">
+    <div class="divider-hor white"></div>
+    <div class="header-cart-content">
+        <h2>Кофе</h2>
+        <p class="breadcrumb brown-text"><a href="index.html">Главная</a> → Каталог → <a href="espresso.html">Для
+            эспрессо</a> → Колумбия Рафаэль Айя</p>
+    </div>
+    <div class="divider-hor beige"></div>
+</header>
+<section>
+    <div class="product-section shadow">
+        <div class="product-column-1">
+            <h2>Колумбия Рафаэль Айя</h2>
+            <img src="img/555x970_la_red.jpg" alt="Изображение товара">
+        </div>
+        <div class="product-column-2">
+            <h4>ХАРАКТЕРИСТИКА</h4>
+            <p><span class="bold-b">Разновидность: </span>розовый бурбон</p>
+            <p><span class="bold-b">Регион: </span>Уила, Ла Флорида</p>
+            <p><span class="bold-b">Сбор урожая: </span>Октябрь 2021</p>
+            <p><span class="bold-b">Способ обработки: </span>Натуральный</p>
+            <h4><br>ОПИСАНИЕ</h4>
+            <p>Яркий и искристый кофе со вкусом темных фруктов, ягод и портвейна!</p>
+            <div class="bar-external">
+                <p>Кислотность</p>
+                <div class="bar-background light"></div>
+                <div class="bar-fullness red kislotnost" style="width: 70%"></div>
+            </div>
+            <div class="bar-external">
+                <p>Горечь</p>
+                <div class="bar-background light"></div>
+                <div class="bar-fullness red gorech" style="width: 40%"></div>
+            </div>
+            <div class="bar-external">
+                <p>Плотность</p>
+                <div class="bar-background light"></div>
+                <div class="bar-fullness red plotnost" style="width: 15%"></div>
+            </div>
+            <div class="ce-right">
+                <div class="background light"></div>
+                <div class="button brown-text count-button">
+                    <div class="button-underline beige"></div>
+                    <div class="button-background white"></div>
+                    <button class="count-minus" onclick="changeCount(this, false)">
+                    </button>
+                    <p class="count">1</p>
+                    <button class="count-plus" onclick="changeCount(this, true)"></button>
+                </div>
+                <div class="row-end">
+                    <p class="small-price-title bold-b" onclick="changeSelectedPrice(this, 'big-price-title')">250
+                        гр</p>
+                    <p class="big-price-title" onclick="changeSelectedPrice(this, 'small-price-title')">1 кг</p>
+                </div>
+                <h5 class="ce-price">685 ₽</h5>
+            </div>
+        </div>
+    </div>
+    <div class="column-between product-section2">
+        <h4>Ферма Ла Виргиния</h4>
+        <p>Ферма находится в регионе Уила, Ла Флорида, на высоте 1700 м и принадлежит Рафаэлю Айя. Рафаэль Айя родился
+            в Толиме и начинал работать на ферме вместе с отцом будучи мальчиком. Вот уже как 35 лет он занимается
+            выращиванием кофе. В 2002 году он купил свою первую ферму в Тимана, Уила. Но только в 2012 году он начал
+            работать со specialty кофе. На ферме "Ла Виргиния" растут такие разновидности, как гейша, жёлтый бурбон,
+            пакамара и катурра. С Рафаэлем мы знакомы уже очень давно! Мы постоянно помогаем ему во всем. Например,
+            когда-
+            то помогли построить канатную дорогу, которая облегчила способ доставки ягод с фермы на станцию обработки. А
+            теперь Рафаэль Айя является нашим соседом по ферме, и, более того, сотрудником нашей компании. Так как
+            абсолютно
+            всеми работами на нашей ферме сейчас руководит он! Кстати, это первая его официальная работа в жизни!</p>
+        <div class="gallery">
+            <img src="img/DSC00952_min.webp" height="208" width="400" alt=""/>
+            <img src="img/DSC00580_min.JPG" height="3376" width="6000" alt=""/>
+            <img src="img/DSC00574_min.webp" height="208" width="400" alt=""/>
+            <img src="img/91207DCD_A39C_47A6_A6C8_FD807BF2B581_min.JPG" height="810" width="1440" alt=""/>
+        </div>
+    </div>
+</section>
+<script src="load-nav-menu.js"></script>
+<script src="load-footer.js"></script>
+
+<script src="js/catalog.js"></script>
+<script src="js/card_item.js"></script>
+<script src="js/cart.js"></script>
+
+</body>

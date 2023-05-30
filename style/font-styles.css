@@ -4,6 +4,23 @@ body * {
     line-height: 17px;
 }
 
+.stat {
+    font-family: 'AvenirNextCyr-Regular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/*i {*/
+/*    !*font-family: 'Bitter', serif;*!*/
+/*    font-style: italic;*/
+/*}*/
+
+.italic {
+    font-style: italic;
+}
+
 .small-text {
     font-family: 'AvenirNextCyr-Regular', sans-serif;
     font-size: 13px;
