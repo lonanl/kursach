@@ -3,10 +3,10 @@ function changeCount(cardObject, isplus) {
     let count = Number(pCountObject.textContent)
     if (isplus && count < 10) {
         count += 1
-        pCountObject.textContent = count
+        pCountObject.textContent = String(count)
     } else if (!isplus && count > 1) {
         count -= 1
-        pCountObject.textContent = count
+        pCountObject.textContent = String(count)
     }
     console.log(count)
     // console.log(cardObject.parentElement.parentElement.parentElement.classList.contains('cart-element'))
@@ -28,4 +28,3 @@ function changeSelectedPrice(priceElem, targetClass) {
             updatePriceBySize(priceElem, targetClass)
     }
 }
-

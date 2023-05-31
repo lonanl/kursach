@@ -28,7 +28,7 @@ if (itemsEspresso !== null) {
 
     let itemsFilter = document.querySelector('.for-filter-column .items')
     itemsEspresso.querySelector('.item-card').remove() //удаляем оригинальную карточку
-    fill(itemsEspresso, itemSample, catalogEspresso)
+    fill(itemsEspresso, itemSample, catalogEspresso.slice(0, 6))
     fill(itemsFilter, itemSample, catalogFilter)
 }
 
