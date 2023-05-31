@@ -85,6 +85,10 @@ h5.bold-b {
     background-color: white;
 }
 
+.white-text {
+    color: white;
+}
+
 .beige {
     background-color: var(--beige);
 }

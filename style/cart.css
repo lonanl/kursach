@@ -289,3 +289,32 @@ article.user-profile {
     text-align: right;
     padding-left: 25px;
 }
+
+body.error {
+    background-color: #edc4b0;
+}
+
+div.error {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: fit-content;
+}
+
+img.error {
+    width: 650px;
+    height: fit-content;
+}
+
+article.error {
+    width: 550px;
+    text-align: justify;
+    position: relative;
+}
+
+article.error .background {
+    background-color: var(--red);
+}
