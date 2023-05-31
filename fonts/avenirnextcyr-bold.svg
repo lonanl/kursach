@@ -1,16 +1,17 @@
 <?xml version="1.0" standalone="no"?>
-  <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
-  <svg>
-  <metadata>
-  Created by font-carrier
-  </metadata>
-  <defs>
-  <font id="AvenirNextCyr-Bold" horiz-adv-x="1245" vert-adv-y="1245" >
-    <font-face
-      
-      font-family="Avenir Next Cyr Medium"
-      
-      font-weight="400"
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--suppress ALL -->
+<svg>
+    <metadata>
+        Created by font-carrier
+    </metadata>
+    <defs>
+        <font id="AvenirNextCyr-Bold" horiz-adv-x="1245" vert-adv-y="1245">
+            <font-face
+
+                    font-family="Avenir Next Cyr Medium"
+
+                    font-weight="400"
       
       font-stretch="normal"
       

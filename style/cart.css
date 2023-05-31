@@ -258,3 +258,34 @@ article {
 .login-inner input {
     margin: 0;
 }
+
+.personal-info {
+    padding: 15px;
+    background-color: var(--light);
+    width: fit-content;
+}
+
+article.user-profile {
+    width: fit-content;
+    height: fit-content;
+}
+
+.user-profile .bar-external {
+    width: 100%;
+}
+
+.statistic td {
+    padding: 10px 0;
+}
+
+.lk {
+    width: fit-content;
+}
+
+.statistic td:last-child {
+    font-family: 'Avenir Next', 'AvenirNextCyr-Demi', sans-serif;
+    font-weight: 500;
+    color: var(--beige);
+    text-align: right;
+    padding-left: 25px;
+}
