@@ -307,6 +307,7 @@ section {
     column-gap: 20px;
     row-gap: 20px;
     flex-wrap: wrap;
+    min-height: 1000px;
 }
 
 .section-column-2 {
@@ -597,7 +598,7 @@ footer .logo {
     margin-bottom: 40px;
 }
 
-footer input[type=text] {
+input[type=text], input[type=password] {
     width: 230px;
     /*height: 36px;*/
     padding: 10px;

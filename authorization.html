@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Доставка и оплата - Зёрнышко</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/cart.css">
+    <link rel="shortcut icon" href="img/favicon-z.svg" type="image/x-icon">
+</head>
+<body>
+<header class="header-cart">
+    <div class="divider-hor white"></div>
+    <div class="header-cart-content">
+        <h2>Доставка и оплата</h2>
+        <p class="breadcrumb brown-text"><a href="index.html">Главная</a> → Блог → Доставка и оплата</p>
+    </div>
+    <div class="divider-hor beige"></div>
+</header>
+<script src="load-nav-menu.js"></script>
+<section>
+    <div class="login-sec">
+        <div class="login-inner shadow">
+            <div class="background light"></div>
+            <h3>Вход и регистрация</h3>
+            <div class="row-between">
+                <p class="bold-b">Телефон / Email</p>
+                <label class="input-email">
+                    <input type="text" name="login" placeholder="+7 123 456-78-90">
+                </label>
+            </div>
+            <div class="row-between">
+                <p class="bold-b">Пароль / Код</p>
+                <label class="input-email">
+                    <input type="password" name="password" id="password" placeholder="● ● ● ● ●">
+                </label>
+            </div>
+            <div class="row-between">
+                <a class="button brown-text" onclick="document.querySelector('.code-sent').setAttribute('style','')">
+                    <p>Получить код</p>
+                    <div class="button-underline red"></div>
+                </a>
+                <a class="button ligth-text" onclick="tryLogin()">
+                    <p>Войти</p>
+                    <img src="img/icons/go_in17.svg" alt="Купить" width="16" height="16">
+                    <div class="button-underline brown"></div>
+                    <div class="button-background red"></div>
+                </a>
+            </div>
+            <div class="row-end wrong-msg" style="display: none">
+                <p class="bold-b red-text">Неверный код или данные входа!</p>
+            </div>
+            <div class="row-between">
+                <p class="code-sent small-text brown-text" style="display: none">Код отправлен</p>
+                <p></p>
+                <p class="small-text beige-text">Правильный код: alpatova</p>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="load-footer.js"></script>
+
+<script src="js/catalog.js"></script>
+<script src="js/card_item.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/login.js"></script>
+
+</body>
