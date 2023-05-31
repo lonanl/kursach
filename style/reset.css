@@ -30,7 +30,8 @@ html {
 
 body {
     line-height: 1;
-    width: 1920px;
+    min-width: 1920px;
+    margin: 0 auto;
 }
 
 ol, ul {
